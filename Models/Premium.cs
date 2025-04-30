@@ -4,11 +4,11 @@
     {
         public int IdPremium { get; set; }
 
-        public string periodo { get; set; }
+        public string? periodo { get; set; }
 
         public float valor { get; set; }
 
-        public string nome { get; set; }
+        public string? nome { get; set; }
 
     }
 }

@@ -3330,23 +3330,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Noite.cetafaju\\.nuget\\packages\\": {},
+    "C:\\Users\\noite.cetafaju\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Noite.cetafaju\\Desktop\\turismoTCC\\turismoTCC.csproj",
+      "projectUniqueName": "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj",
       "projectName": "turismoTCC",
-      "projectPath": "C:\\Users\\Noite.cetafaju\\Desktop\\turismoTCC\\turismoTCC.csproj",
-      "packagesPath": "C:\\Users\\Noite.cetafaju\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Noite.cetafaju\\Desktop\\turismoTCC\\obj\\",
+      "projectPath": "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj",
+      "packagesPath": "C:\\Users\\noite.cetafaju\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Noite.cetafaju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\noite.cetafaju\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

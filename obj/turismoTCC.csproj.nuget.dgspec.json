@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj": {}
+    "C:\\Users\\Noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj": {
+    "C:\\Users\\Noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj",
+        "projectUniqueName": "C:\\Users\\Noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj",
         "projectName": "turismoTCC",
-        "projectPath": "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj",
-        "packagesPath": "C:\\Users\\noite.cetafaju\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\noite.cetafaju\\Downloads\\turismoTCC\\obj\\",
+        "projectPath": "C:\\Users\\Noite.cetafaju\\Downloads\\turismoTCC\\turismoTCC.csproj",
+        "packagesPath": "C:\\Users\\Noite.cetafaju\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Noite.cetafaju\\Downloads\\turismoTCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\noite.cetafaju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Noite.cetafaju\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -61,8 +61,14 @@
               "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.13, )"
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             }
           },
           "imports": [

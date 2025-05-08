@@ -22,10 +22,12 @@ namespace turismoTCC.Models
         public DateTime dataFim { get; set; }
 
 
+
         [ForeignKey("Usuario")]
         [Display(Name = "ID Usuário")]
         public int IdUsuario { get; set; }
         public Usuario? Usuario { get; set; }
+
 
 
         [ForeignKey("Premium")]

@@ -13,6 +13,7 @@ namespace turismoTCC.Models
         [Display(Name = "Nome do Plano")]
         public string? nome { get; set; }
 
+
         [Required]
         [StringLength(20)]
         [Display(Name = "Tempo de Inscrição")]

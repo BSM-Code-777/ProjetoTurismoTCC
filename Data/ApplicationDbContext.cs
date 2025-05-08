@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using turismoTCC.Models;
 
 namespace turismoTCC.Data
 {
@@ -9,5 +10,6 @@ namespace turismoTCC.Data
             : base(options)
         {
         }
+        public DbSet<turismoTCC.Models.Usuario> Usuario { get; set; } = default!;
     }
 }

@@ -1,19 +1,24 @@
-﻿namespace turismoTCC.Models
-{
-    public class Usuario
-    {
-        public int idUsuario { get; set; }
+﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
+namespace turismoTCC.Models
+{
+    public class Usuario : IdentityUser
+    {
+
+        [Required]
+        [StringLength(50)]
         public string? nome { get; set; }
 
-        public string? email { get; set; }
 
-        public string? senha { get; set; }
 
 
         public ICollection<Viagem>? Viagens { get; set; }
 
-       
+        public ICollection<Sugestao>? Sugestoes { get; set; }
+        public ICollection<Registro>? Registros { get; set; }
+
+
 
     }
 }

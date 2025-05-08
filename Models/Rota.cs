@@ -1,21 +1,31 @@
-﻿namespace turismoTCC.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace turismoTCC.Models
 {
     public class Rota
     {
+        [Key]
+        [Display(Name = "ID Rota")]
         public int IdRota { get; set; }
 
-        public string? nome { get; set;}
+        [Required]
+        [StringLength(50)]
+        [Display(Name = "Nome")]
+        public string? nome { get; set; }
 
-
-        public int usuario { get; set; }
+        [ForeignKey("Usuario")]
+        [Display(Name = "ID Usuario")]
+        public int idUsuario { get; set; }
         public Usuario? Usuario { get; set; }
 
-
+        [ForeignKey("Viagem")]
+        [Display(Name = "ID Viagem")]
         public int idViagem { get; set; }
-        public Viagem? Viagem { get; set;}
+        public Viagem? Viagem { get; set; }
 
 
 
-        public ICollection<Localidade>? Localidades { get; set; }
+        public ICollection<Viagem>? Viagens { get; set; }
     }
 }

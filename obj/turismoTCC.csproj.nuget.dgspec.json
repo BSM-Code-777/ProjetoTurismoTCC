@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bruno\\Downloads\\turismoTCC\\turismoTCC.csproj": {}
+    "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bruno\\Downloads\\turismoTCC\\turismoTCC.csproj": {
+    "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bruno\\Downloads\\turismoTCC\\turismoTCC.csproj",
+        "projectUniqueName": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
         "projectName": "turismoTCC",
-        "projectPath": "C:\\Users\\bruno\\Downloads\\turismoTCC\\turismoTCC.csproj",
-        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bruno\\Downloads\\turismoTCC\\obj\\",
+        "projectPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+        "packagesPath": "C:\\Users\\noite.cetafaju\\.nuget\\packages\\",
+        "outputPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\noite.cetafaju\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,13 +38,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net7.0": {
@@ -96,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

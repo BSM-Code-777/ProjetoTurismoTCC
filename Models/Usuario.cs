@@ -12,11 +12,6 @@ namespace turismoTCC.Models
         public string? nome { get; set; }
 
 
-        //public ICollection<Viagem>? Viagens { get; set; }
-
-        //public ICollection<Sugestoes>? Sugestoes { get; set; }
-
-
 
         public ICollection<Sugestao>? Sugestoes { get; set; }
         public ICollection<Registro>? Registros { get; set; }

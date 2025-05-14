@@ -4,6 +4,11 @@ using turismoTCC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+builder.Services.AddEntityFrameworkSqlServer().AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

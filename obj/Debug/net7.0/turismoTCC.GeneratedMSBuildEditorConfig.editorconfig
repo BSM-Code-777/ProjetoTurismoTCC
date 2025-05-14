@@ -9,45 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = turismoTCC
 build_property.RootNamespace = turismoTCC
-build_property.ProjectDir = E:\Bruno-Ares\ProjetoTurismoTCC\
+build_property.ProjectDir = E:\BSM\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Bruno-Ares\ProjetoTurismoTCC
+build_property.MSBuildProjectDirectory = E:\BSM
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/BSM/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/Home/Index.cshtml]
+[E:/BSM/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/Home/Privacy.cshtml]
+[E:/BSM/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/Shared/Error.cshtml]
+[E:/BSM/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/Shared/_LoginPartial.cshtml]
+[E:/BSM/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/BSM/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/_ViewImports.cshtml]
+[E:/BSM/Views/Sugestoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BSM/Views/Sugestoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BSM/Views/Sugestoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BSM/Views/Sugestoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BSM/Views/Sugestoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/BSM/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/_ViewStart.cshtml]
+[E:/BSM/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Bruno-Ares/ProjetoTurismoTCC/Views/Shared/_Layout.cshtml]
+[E:/BSM/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-liplmyil3u

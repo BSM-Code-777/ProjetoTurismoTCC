@@ -669,18 +669,18 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/7.0.13": {
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.36": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.13"
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.36"
         },
         "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
             "related": ".xml"
           }
         },
@@ -4848,18 +4848,18 @@
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/7.0.13": {
-      "sha512": "rWIUQrvE8UT2dQkSTb7cpCWAwokg+HaqoydnKAW2ndL9cPDNffhahjhI5969ZC3hX3Ek0cHkwyMREqQHLJj6Zg==",
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.36": {
+      "sha512": "fOlgz9QZF3vihjfWnCDJvKDAJfA/aG/vDy42YDQWLy08UP5/rej5aAjfwbG5gbRgM+rypVcDoU8/SoR0N8lvRA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/7.0.13",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.36",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
-        "lib/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
-        "microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.13.nupkg.sha512",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.36.nupkg.sha512",
         "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
       ]
     },
@@ -11646,7 +11646,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 7.0.13",
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.36",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.13",
       "Microsoft.AspNetCore.Identity.UI >= 7.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
@@ -11661,11 +11661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+      "projectUniqueName": "E:\\BSM\\turismoTCC.csproj",
       "projectName": "turismoTCC",
-      "projectPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+      "projectPath": "E:\\BSM\\turismoTCC.csproj",
       "packagesPath": "C:\\Users\\noite.cetafaju\\.nuget\\packages\\",
-      "outputPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\obj\\",
+      "outputPath": "E:\\BSM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -11700,7 +11700,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[7.0.13, )"
+            "version": "[6.0.36, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",

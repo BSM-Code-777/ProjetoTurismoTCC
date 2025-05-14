@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj": {}
+    "E:\\BSM\\turismoTCC.csproj": {}
   },
   "projects": {
-    "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj": {
+    "E:\\BSM\\turismoTCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+        "projectUniqueName": "E:\\BSM\\turismoTCC.csproj",
         "projectName": "turismoTCC",
-        "projectPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+        "projectPath": "E:\\BSM\\turismoTCC.csproj",
         "packagesPath": "C:\\Users\\noite.cetafaju\\.nuget\\packages\\",
-        "outputPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\obj\\",
+        "outputPath": "E:\\BSM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,7 +46,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.13, )"
+              "version": "[6.0.36, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

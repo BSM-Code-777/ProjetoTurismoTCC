@@ -5,11 +5,12 @@ using turismoTCC.Models;
 namespace turismoTCC.Data
 {
     public class ApplicationDbContext : IdentityDbContext
-    {
+    {   ////////////////////////////////////////////////////////////////////////////////////////
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
-        public DbSet<turismoTCC.Models.Usuario> Usuario { get; set; } = default!;
-    }
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<turismoTCC.Models.Sugestao> Sugestao { get; set; } = default!;
+    }   //////////////////////////////////////////////////////////////////////////////////////////
 }

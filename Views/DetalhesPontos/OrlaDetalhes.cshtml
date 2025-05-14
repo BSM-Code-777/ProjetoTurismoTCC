@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orla de Atalaia</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fefcf3;
+            color: #2e4e1d;
+        }
+
+        header {
+            background-color: #00704a;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            margin-left: 1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .titulo {
+            text-align: center;
+            color: #00704a;
+            margin-bottom: 2rem;
+        }
+
+        .descricao {
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .foto-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+            .foto-box:hover {
+                transform: scale(1.02);
+            }
+
+            .foto-box img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .foto-box p {
+                padding: 0.75rem;
+                font-size: 0.95rem;
+            }
+
+        footer {
+            background-color: #00704a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Orla de Atalaia</h1>
+    </header>
+
+    <main class="container">
+        <h2 class="titulo">Descubra a Orla mais famosa de Sergipe</h2>
+        <div class="descricao">
+            A Orla de Atalaia, localizada em Aracaju, é um dos principais cartões-postais de Sergipe. Com uma extensão de aproximadamente 6 km, ela encanta visitantes com sua infraestrutura moderna, ciclovias, lagos artificiais, fontes, quadras esportivas e uma belíssima faixa de areia. Ideal para passeios em família, prática de esportes e contemplação do pôr do sol.
+        </div>
+
+        <div class="galeria">
+            <div class="foto-box">
+                <img src="imagens/orla1.jpg" alt="Pista de caminhada">
+                <p>Calçadão arborizado com pista para caminhada e ciclovia ao lado.</p>
+            </div>
+            <div class="foto-box">
+                <img src="imagens/orla2.jpg" alt="Praia da Atalaia">
+                <p>A praia da Atalaia é perfeita para banho e tem águas mornas e tranquilas.</p>
+            </div>
+            <div class="foto-box">
+                <img src="imagens/orla3.jpg" alt="Fonte iluminada">
+                <p>Fonte com iluminação noturna, muito visitada por turistas.</p>
+            </div>
+            <div class="foto-box">
+                <img src="imagens/orla4.jpg" alt="Área de lazer">
+                <p>Espaço para lazer e atividades físicas, com quadras e academias ao ar livre.</p>
+            </div>
+            <div class="foto-box">
+                <img src="imagens/orla5.jpg" alt="Monumento dos Arcos da Orla">
+                <p>O Monumento dos Arcos é símbolo icônico da orla, ideal para fotos.</p>
+            </div>
+            <div class="foto-box">
+                <img src="imagens/orla6.jpg" alt="Área gastronômica">
+                <p>Área com bares e restaurantes para provar o melhor da culinária sergipana.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Turismo Sergipe</p>
+    </footer>
+
+</body>
+</html>

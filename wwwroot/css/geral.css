@@ -1,0 +1,124 @@
+﻿/* Geral */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefcf3;
+    color: #2e4e1d;
+}
+
+header {
+    background-color: #00704a;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+footer {
+    background-color: #00704a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Página inicial */
+.destaque {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #e0f7eb;
+}
+
+.chamada {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+    .chamada img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .chamada div {
+        max-width: 400px;
+    }
+
+    .chamada a {
+        display: inline-block;
+        margin-top: 1rem;
+        background-color: #00704a;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .chamada a:hover {
+            background-color: #005c3b;
+        }
+
+/* Galeria de pontos */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.ponto {
+    width: 250px;
+    text-align: center;
+}
+
+    .ponto img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+/* Formulário de contato */
+.contato {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: #00704a;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #005c3b;
+    }

@@ -1,0 +1,65 @@
+﻿
+.projetos {
+    background-color: #191919;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+    .projetos h2 {
+        color: white;
+        font-size: 75px;
+        text-align: center;
+    }
+
+.card {
+    background-color: black;
+    height: 365px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+}
+
+#ref {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.card img {
+    height: 100px;
+}
+
+.card h5 {
+    color: white;
+    font-size: 24px;
+}
+
+.card p {
+    color: #e6c4cf;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card a {
+    background-color: #f9004d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 150px;
+}
+
+    .card a:hover {
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        transition: 0.5s;
+    }
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}

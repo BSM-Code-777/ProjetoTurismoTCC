@@ -24,12 +24,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoTurismoAtualizado/ProjetoTurismoTCC/Views/DetalhesPontos/OrlaDetalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxoZXNQb250b3NcT3JsYURldGFsaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoTurismoAtualizado/ProjetoTurismoTCC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoTurismoAtualizado/ProjetoTurismoTCC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoTurismoAtualizado/ProjetoTurismoTCC/Views/PontosTuristicos/Previa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9udG9zVHVyaXN0aWNvc1xQcmV2aWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoTurismoAtualizado/ProjetoTurismoTCC/Views/Shared/Error.cshtml]

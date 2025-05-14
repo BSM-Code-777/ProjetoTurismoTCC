@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace turismoTCC.Models
 {
@@ -23,11 +24,12 @@ namespace turismoTCC.Models
         public string? tipo { get; set; }
 
 
+        [ForeignKey("Posicao")]
         [Display(Name = "ID Posição")]
         public int idPosicao { get; set; }
         public Posicao? Posicao { get; set; }
 
-
+        public ICollection<Viagem>? Viagens { get; set; }
 
 
 

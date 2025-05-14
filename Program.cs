@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using turismoTCC.Data;
+using turismoTCC.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,40 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    string[] roles = { "Cliente", "Administrador" };
+
+    foreach (var role in roles)
+    {
+        if (!await roleManager.RoleExistsAsync(role))
+        {
+            await roleManager.CreateAsync(new IdentityRole(role));
+        }
+    }
+
+    // Criação opcional do gerente
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<Usuario>>();
+    string gerenteEmail = "admTurismo@senai.com";
+    var gerente = await userManager.FindByEmailAsync(gerenteEmail);
+    if (gerente == null)
+    {
+        var newGerente = new Usuario
+        {
+            UserName = gerenteEmail,
+            Email = gerenteEmail,
+            EmailConfirmed = true
+        };
+
+        var result = await userManager.CreateAsync(newGerente, "Turismo@005008!");
+        if (result.Succeeded)
+        {
+            await userManager.AddToRoleAsync(newGerente, "Gerente");
+        }
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

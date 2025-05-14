@@ -16,8 +16,8 @@ namespace turismoTCC.Models
         [Display(Name = "Descrição")]
         public string? descricao { get; set; }
 
-        [ForeignKey("Localidade")]
-        public int idUsuario { get; set; }
+        [ForeignKey("Usuario")]
+        public string? idUsuario { get; set; }
 
         public Usuario? usuario { get; set; }
     }

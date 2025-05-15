@@ -16,10 +16,19 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddControllersWithViews();
 
+builder.Services.AddIdentity<Usuario, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
+
+/* 
+ ///SE PRECISAR ADICIONAR POLICY de Gerente, adicione isto:
+ builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("GerenteOnly", policy => policy.RequireRole("Administrador"));
+});
+ */
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
@@ -35,7 +44,7 @@ using (var scope = app.Services.CreateScope())
         }
     }
 
-    // Criação opcional do gerente
+    // Criacao opcional do gerente
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<Usuario>>();
     string gerenteEmail = "admTurismo@senai.com";
     var gerente = await userManager.FindByEmailAsync(gerenteEmail);
@@ -51,7 +60,7 @@ using (var scope = app.Services.CreateScope())
         var result = await userManager.CreateAsync(newGerente, "Turismo@005008!");
         if (result.Succeeded)
         {
-            await userManager.AddToRoleAsync(newGerente, "Gerente");
+            await userManager.AddToRoleAsync(newGerente, "Administrador");
         }
     }
 }

@@ -12068,11 +12068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+      "projectUniqueName": "C:\\Users\\noite.cetafaju\\Desktop\\projeto\\ProjetoTurismoTCC\\turismoTCC.csproj",
       "projectName": "turismoTCC",
-      "projectPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+      "projectPath": "C:\\Users\\noite.cetafaju\\Desktop\\projeto\\ProjetoTurismoTCC\\turismoTCC.csproj",
       "packagesPath": "C:\\Users\\noite.cetafaju\\.nuget\\packages\\",
-      "outputPath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\obj\\",
+      "outputPath": "C:\\Users\\noite.cetafaju\\Desktop\\projeto\\ProjetoTurismoTCC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

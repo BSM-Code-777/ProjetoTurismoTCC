@@ -5,6 +5,9 @@ using turismoTCC.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 builder.Services.AddEntityFrameworkSqlServer().AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -22,13 +25,13 @@ builder.Services.AddIdentity<Usuario, IdentityRole>(options => options.SignIn.Re
     .AddDefaultTokenProviders();
 
 
-/* 
+
  ///SE PRECISAR ADICIONAR POLICY de Gerente, adicione isto:
  builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("GerenteOnly", policy => policy.RequireRole("Administrador"));
+   // options.AddPolicy("AdmOnly", policy => policy.RequireRole("Administrador"));
 });
- */
+ 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
@@ -44,9 +47,9 @@ using (var scope = app.Services.CreateScope())
         }
     }
 
-    // Criacao opcional do gerente
+    // Criacao do gerente no codigo [USE PARA AUTORIZAR CERTAS AREAS]
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<Usuario>>();
-    string gerenteEmail = "admTurismo@senai.com";
+    string gerenteEmail = "admTurismo@senai.com";    //E-mail                           
     var gerente = await userManager.FindByEmailAsync(gerenteEmail);
     if (gerente == null)
     {
@@ -57,7 +60,7 @@ using (var scope = app.Services.CreateScope())
             EmailConfirmed = true
         };
 
-        var result = await userManager.CreateAsync(newGerente, "Turismo@005008!");
+        var result = await userManager.CreateAsync(newGerente, "Turismo@005008!"); //Senha
         if (result.Succeeded)
         {
             await userManager.AddToRoleAsync(newGerente, "Administrador");
@@ -82,6 +85,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication(); // <- adicionar essa linha antes do UseAuthorization()
 app.UseAuthorization();
 
 app.MapControllerRoute(

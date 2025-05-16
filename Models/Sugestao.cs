@@ -19,6 +19,6 @@ namespace turismoTCC.Models
         [ForeignKey("Usuario")]
         public string? idUsuario { get; set; }
 
-        public Usuario? usuario { get; set; }
+        public Usuario? Usuario { get; set; }
     }
 }

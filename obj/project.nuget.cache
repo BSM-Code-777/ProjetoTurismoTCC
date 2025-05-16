@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dre+vMwpU01MCyysWDzCh4KM2m3x52+8t4+913wQzN1ieflPD96Trs60RfvPXKRolXZ5npnIAdUUvcOfOGXedQ==",
+  "dgSpecHash": "S+rG1QCJePqOdtErzxEFocR+gl3BtDBmP6RmGv51V+dM3gkBBqGKphYq9Q2GicRyxPD0LmF0mIxz+/7sK+0F0g==",
   "success": true,
-  "projectFilePath": "E:\\Bruno-Ares\\ProjetoTurismoTCC\\turismoTCC.csproj",
+  "projectFilePath": "C:\\Users\\noite.cetafaju\\Desktop\\projeto\\ProjetoTurismoTCC\\turismoTCC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\noite.cetafaju\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\noite.cetafaju\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

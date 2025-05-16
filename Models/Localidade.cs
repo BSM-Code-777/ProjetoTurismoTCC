@@ -15,6 +15,30 @@ namespace turismoTCC.Models
 
         [Required]
         [StringLength(100)]
+        public string? linkMaps { get; set; }
+
+        [Required]
+        [Display(Name = "Latitude")]
+        public int latitude { get; set; }
+
+        [Required]
+        [Display(Name = "Longitude")]
+        public int longitude { get; set; }
+
+        [Required]
+        [Display(Name = "Bairro")]
+        public string? bairro { get; set; }
+
+        [Required]
+        [Display(Name = "Endereço")]
+        public string? endereco { get; set; }
+
+        [Required]
+        [Display(Name = "Rua")]
+        public string? rua { get; set; }
+
+        [Required]
+        [StringLength(100)]
         [Display(Name = "Descrição")]
         public string? descricao { get; set; }
 
@@ -23,11 +47,6 @@ namespace turismoTCC.Models
         [Display(Name = "Tipo de Local")]
         public string? tipo { get; set; }
 
-
-        [ForeignKey("Posicao")]
-        [Display(Name = "ID Posição")]
-        public int idPosicao { get; set; }
-        public Posicao? Posicao { get; set; }
 
         public ICollection<Viagem>? Viagens { get; set; }
 

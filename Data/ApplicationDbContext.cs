@@ -14,5 +14,9 @@ namespace turismoTCC.Data
         public DbSet<turismoTCC.Models.Sugestao> Sugestao { get; set; } = default!;
         public DbSet<turismoTCC.Models.Viagem> Viagem { get; set; } = default!;
         public DbSet<turismoTCC.Models.Registro> Registro { get; set; } = default!;
+        public DbSet<turismoTCC.Models.Localidade> Localidade { get; set; } = default!;
+        public DbSet<turismoTCC.Models.Premium> Premium { get; set; } = default!;
+        public DbSet<turismoTCC.Models.Parceria> Parceria { get; set; } = default!;
+        public DbSet<turismoTCC.Models.Beneficio> Beneficio { get; set; } = default!;
     }   //////////////////////////////////////////////////////////////////////////////////////////
 }

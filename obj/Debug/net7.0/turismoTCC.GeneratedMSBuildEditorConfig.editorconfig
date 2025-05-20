@@ -9,137 +9,221 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = turismoTCC
 build_property.RootNamespace = turismoTCC
-build_property.ProjectDir = C:\Users\noite.cetafaju\Desktop\projeto\ProjetoTurismoTCC\
+build_property.ProjectDir = C:\Users\bruno\OneDrive\Área de Trabalho\ProjetoHoje\ProjetoTurismoTCC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\noite.cetafaju\Desktop\projeto\ProjetoTurismoTCC
+build_property.MSBuildProjectDirectory = C:\Users\bruno\OneDrive\Área de Trabalho\ProjetoHoje\ProjetoTurismoTCC
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 7.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/DetalhesPontos/OrlaDetalhes.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Beneficios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Beneficios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Beneficios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Beneficios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Beneficios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/DetalhesPontos/OrlaDetalhes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxoZXNQb250b3NcT3JsYURldGFsaGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Home/Index.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Home/Privacy.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/PontosTuristicos/Previa.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Localidades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Localidades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Localidades/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Localidades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Localidades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxpZGFkZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Parcerias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VyaWFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Parcerias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VyaWFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Parcerias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VyaWFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Parcerias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VyaWFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Parcerias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyY2VyaWFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/PontosTuristicos/Previa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9udG9zVHVyaXN0aWNvc1xQcmV2aWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Registros/Create.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Premiuns/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWl1bnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Premiuns/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWl1bnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Premiuns/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWl1bnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Premiuns/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWl1bnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Premiuns/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWl1bnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Registros/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Registros/Delete.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Registros/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Registros/Details.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Registros/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Registros/Edit.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Registros/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Registros/Index.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Registros/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Shared/Error.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Sugestoes/Create.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Sugestoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Sugestoes/Delete.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Sugestoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Sugestoes/Details.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Sugestoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Sugestoes/Edit.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Sugestoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Sugestoes/Index.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Sugestoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VnZXN0b2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Viagens/Create.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Viagens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhZ2Vuc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Viagens/Delete.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Viagens/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhZ2Vuc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Viagens/Details.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Viagens/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhZ2Vuc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Viagens/Edit.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Viagens/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhZ2Vuc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Viagens/Index.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Viagens/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhZ2Vuc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/_ViewImports.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/_ViewStart.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/noite.cetafaju/Desktop/projeto/ProjetoTurismoTCC/Views/Shared/_Layout.cshtml]
+[C:/Users/bruno/OneDrive/Área de Trabalho/ProjetoHoje/ProjetoTurismoTCC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-liplmyil3u

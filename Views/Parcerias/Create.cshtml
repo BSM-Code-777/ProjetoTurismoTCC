@@ -1,0 +1,41 @@
+﻿@model turismoTCC.Models.Parceria
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Parceria</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="beneficio" class="control-label"></label>
+                <input asp-for="beneficio" class="form-control" />
+                <span asp-validation-for="beneficio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idLocal" class="control-label"></label>
+                <select asp-for="idLocal" class ="form-control" asp-items="ViewBag.idLocal"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="idPremium" class="control-label"></label>
+                <select asp-for="idPremium" class ="form-control" asp-items="ViewBag.idPremium"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace turismoTCC.Migrations
 {
     /// <inheritdoc />
-    public partial class sistemaTurismo : Migration
+    public partial class turismoSergipe : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -67,20 +67,24 @@ namespace turismoTCC.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Posicao",
+                name: "Localidade",
                 columns: table => new
                 {
-                    idPosicao = table.Column<int>(type: "int", nullable: false)
+                    idLocal = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    nome = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    linkMaps = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     latitude = table.Column<int>(type: "int", nullable: false),
                     longitude = table.Column<int>(type: "int", nullable: false),
                     bairro = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    rua = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    rua = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    descricao = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    tipo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Posicao", x => x.idPosicao);
+                    table.PrimaryKey("PK_Localidade", x => x.idLocal);
                 });
 
             migrationBuilder.CreateTable(
@@ -212,38 +216,68 @@ namespace turismoTCC.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    idUsuario = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UsuarioId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                    idUsuario = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sugestao", x => x.idSugestoes);
                     table.ForeignKey(
-                        name: "FK_Sugestao_AspNetUsers_UsuarioId",
-                        column: x => x.UsuarioId,
+                        name: "FK_Sugestao_AspNetUsers_idUsuario",
+                        column: x => x.idUsuario,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "Localidade",
+                name: "Viagem",
                 columns: table => new
                 {
-                    idLocal = table.Column<int>(type: "int", nullable: false)
+                    IdViagem = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    nome = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    descricao = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    tipo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    idPosicao = table.Column<int>(type: "int", nullable: false)
+                    nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    idLocal = table.Column<int>(type: "int", nullable: false),
+                    idUsuario = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Localidade", x => x.idLocal);
+                    table.PrimaryKey("PK_Viagem", x => x.IdViagem);
                     table.ForeignKey(
-                        name: "FK_Localidade_Posicao_idPosicao",
-                        column: x => x.idPosicao,
-                        principalTable: "Posicao",
-                        principalColumn: "idPosicao",
+                        name: "FK_Viagem_AspNetUsers_idUsuario",
+                        column: x => x.idUsuario,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Viagem_Localidade_idLocal",
+                        column: x => x.idLocal,
+                        principalTable: "Localidade",
+                        principalColumn: "idLocal",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Parceria",
+                columns: table => new
+                {
+                    idParceria = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    beneficio = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    idLocal = table.Column<int>(type: "int", nullable: false),
+                    idPremium = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Parceria", x => x.idParceria);
+                    table.ForeignKey(
+                        name: "FK_Parceria_Localidade_idLocal",
+                        column: x => x.idLocal,
+                        principalTable: "Localidade",
+                        principalColumn: "idLocal",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Parceria_Premium_idPremium",
+                        column: x => x.idPremium,
+                        principalTable: "Premium",
+                        principalColumn: "idPremium",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -300,59 +334,6 @@ namespace turismoTCC.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Parceria",
-                columns: table => new
-                {
-                    idParceria = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    beneficio = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    idLocal = table.Column<int>(type: "int", nullable: false),
-                    idPremium = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Parceria", x => x.idParceria);
-                    table.ForeignKey(
-                        name: "FK_Parceria_Localidade_idLocal",
-                        column: x => x.idLocal,
-                        principalTable: "Localidade",
-                        principalColumn: "idLocal",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Parceria_Premium_idPremium",
-                        column: x => x.idPremium,
-                        principalTable: "Premium",
-                        principalColumn: "idPremium",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Viagem",
-                columns: table => new
-                {
-                    IdViagem = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    idLocal = table.Column<int>(type: "int", nullable: false),
-                    idUsuario = table.Column<string>(type: "nvarchar(450)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Viagem", x => x.IdViagem);
-                    table.ForeignKey(
-                        name: "FK_Viagem_AspNetUsers_idUsuario",
-                        column: x => x.idUsuario,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Viagem_Localidade_idLocal",
-                        column: x => x.idLocal,
-                        principalTable: "Localidade",
-                        principalColumn: "idLocal",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -393,11 +374,6 @@ namespace turismoTCC.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Localidade_idPosicao",
-                table: "Localidade",
-                column: "idPosicao");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Parceria_idLocal",
                 table: "Parceria",
                 column: "idLocal");
@@ -428,9 +404,9 @@ namespace turismoTCC.Migrations
                 column: "idPremium");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sugestao_UsuarioId",
+                name: "IX_Sugestao_idUsuario",
                 table: "Sugestao",
-                column: "UsuarioId");
+                column: "idUsuario");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Viagem_idLocal",
@@ -490,9 +466,6 @@ namespace turismoTCC.Migrations
 
             migrationBuilder.DropTable(
                 name: "Localidade");
-
-            migrationBuilder.DropTable(
-                name: "Posicao");
         }
     }
 }

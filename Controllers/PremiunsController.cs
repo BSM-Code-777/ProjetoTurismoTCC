@@ -14,6 +14,8 @@ namespace turismoTCC.Controllers
     {
         private readonly ApplicationDbContext _context;
 
+       
+
         public PremiunsController(ApplicationDbContext context)
         {
             _context = context;

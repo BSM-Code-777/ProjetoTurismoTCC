@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Venha ser Premium";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="col-md-8 bg-white p-5 rounded shadow-lg animate__animated animate__fadeIn">
+        <h1 class="text-center text-primary mb-4 display-6 fw-bold">@ViewData["Title"]</h1>
+
+        <p class="lead text-center text-secondary">
+            Seja <strong>Premium</strong> e descubra o melhor de <span class="text-primary">Sergipe</span>!
+        </p>
+
+        <p class="mt-4 text-justify">
+            Ser um assinante Premium é abrir as portas para uma experiência completa por Sergipe.
+            Com acesso exclusivo a conteúdos detalhados, roteiros personalizados e dicas dos melhores pontos turísticos, você conhece a cultura, história e belezas naturais do estado como nunca antes.
+        </p>
+        <p class="text-justify">
+            Viva Sergipe de forma intensa, inteligente e inesquecível — torne-se Premium e transforme cada viagem em uma descoberta especial!
+        </p>
+
+        <div class="text-center mt-4">
+            <a asp-controller="Premiuns" asp-action="Create" class="btn btn-lg btn-primary shadow-sm px-4">
+                🌟 Clique aqui e torne-se um Premium Sergipano
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Adicione a classe animate__fadeIn do Animate.css se quiser uma leve animação -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />

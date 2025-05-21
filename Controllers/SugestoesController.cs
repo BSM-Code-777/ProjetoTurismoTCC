@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +10,6 @@ using turismoTCC.Models;
 
 namespace turismoTCC.Controllers
 {
-    [Authorize]
     public class SugestoesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -25,12 +22,8 @@ namespace turismoTCC.Controllers
         // GET: Sugestoes
         public async Task<IActionResult> Index()
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var sugestao = await _context.Sugestao
-                .Where(p => p.idUsuario == userId)
-                .ToListAsync();
-
-            return View(sugestao);
+            var applicationDbContext = _context.Sugestao.Include(s => s.Usuario);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Sugestoes/Details/5
@@ -42,6 +35,7 @@ namespace turismoTCC.Controllers
             }
 
             var sugestao = await _context.Sugestao
+                .Include(s => s.Usuario)
                 .FirstOrDefaultAsync(m => m.idSugestoes == id);
             if (sugestao == null)
             {
@@ -54,6 +48,7 @@ namespace turismoTCC.Controllers
         // GET: Sugestoes/Create
         public IActionResult Create()
         {
+            ViewData["idUsuario"] = new SelectList(_context.Usuario, "Id", "Id");
             return View();
         }
 
@@ -66,13 +61,11 @@ namespace turismoTCC.Controllers
         {
             if (ModelState.IsValid)
             {
-                var idUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier); // usando System.Security.Claims
-                sugestao.idUsuario = idUsuario;
-
                 _context.Add(sugestao);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Create));
             }
+            ViewData["idUsuario"] = new SelectList(_context.Usuario, "Id", "Id", sugestao.idUsuario);
             return View(sugestao);
         }
 
@@ -89,6 +82,7 @@ namespace turismoTCC.Controllers
             {
                 return NotFound();
             }
+            ViewData["idUsuario"] = new SelectList(_context.Usuario, "Id", "Id", sugestao.idUsuario);
             return View(sugestao);
         }
 
@@ -124,6 +118,7 @@ namespace turismoTCC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["idUsuario"] = new SelectList(_context.Usuario, "Id", "Id", sugestao.idUsuario);
             return View(sugestao);
         }
 
@@ -136,6 +131,7 @@ namespace turismoTCC.Controllers
             }
 
             var sugestao = await _context.Sugestao
+                .Include(s => s.Usuario)
                 .FirstOrDefaultAsync(m => m.idSugestoes == id);
             if (sugestao == null)
             {

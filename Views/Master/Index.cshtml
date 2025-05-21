@@ -2,13 +2,22 @@
     ViewData["Title"] = "Painel Geral";
 }
 
-<h1>Painel geral</h1>
+<div class="container py-4">
+    <h1 class="text-primary mb-4">Painel Geral</h1>
 
-<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-    <ul class="navbar-nav flex-grow-1">
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Localidades" asp-action="Index">Localidade</a>
-        </li>
-    </ul>
-  
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <nav class="nav justify-content-center gap-3">
+                <a class="btn btn-outline-primary px-4" asp-area="" asp-controller="Localidades" asp-action="Index">
+                    🌍 Localidades
+                </a>
+                <a class="btn btn-outline-success px-4" asp-area="" asp-controller="Viagens" asp-action="Index">
+                    ✈️ Viagens
+                </a>
+                <a class="btn btn-outline-info px-4" asp-area="" asp-controller="Sugestoes" asp-action="Index">
+                    💡 Sugestões
+                </a>
+            </nav>
+        </div>
+    </div>
 </div>

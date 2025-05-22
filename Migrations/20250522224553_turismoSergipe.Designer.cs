@@ -12,7 +12,7 @@ using turismoTCC.Data;
 namespace turismoTCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250521123038_turismoSergipe")]
+    [Migration("20250522224553_turismoSergipe")]
     partial class turismoSergipe
     {
         /// <inheritdoc />

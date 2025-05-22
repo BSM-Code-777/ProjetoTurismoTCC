@@ -64,7 +64,7 @@ namespace turismoTCC.Controllers
             {
                 _context.Add(premium);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Create));
             }
             return View(premium);
         }

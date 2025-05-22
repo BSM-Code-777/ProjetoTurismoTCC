@@ -2,6 +2,8 @@
 
 namespace turismoTCC.Controllers
 {
+
+
     public class MasterController : Controller
     {
         public IActionResult Index()

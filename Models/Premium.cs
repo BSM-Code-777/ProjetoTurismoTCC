@@ -20,8 +20,9 @@ namespace turismoTCC.Models
         public string? periodo { get; set; }
 
         [Required]
+        [DataType(DataType.Currency)]
         [Display(Name = "Valor")]
-        public float valor { get; set; }
+        public double valor { get; set; }
 
         public ICollection<Registro>? Registros { get; set; }
         public ICollection<Parceria>? Parcerias { get; set; }

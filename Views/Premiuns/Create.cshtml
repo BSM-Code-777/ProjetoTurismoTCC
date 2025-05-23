@@ -9,7 +9,7 @@
         <h2 class="text-center text-primary mb-4">Assinatura Premium</h2>
         <p class="text-center mb-4">Escolha seu plano e conheça o melhor de Sergipe!</p>
 
-        <form asp-action="Create">
+        <form asp-action="Create" id="formID">
             <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
             <div class="form-floating mb-3">
@@ -30,7 +30,13 @@
             </div>
 
             <div class="form-floating mb-4">
-                <input asp-for="valor" class="form-control" id="valorInput" placeholder="Valor" readonly />
+                <select  asp-for="valor" class="form-control" id="valorInput" placeholder="Valor" disabled >
+                    
+                    <option  value="100.00">R$ 100,00</option>
+                    <option  value="75.00">R$ 75,00</option>
+                    <option  value="50.00">R$ 50,00</option>
+                    <option  value="" selected> </option>
+                </select>
                 <label asp-for="valor">Valor</label>
                 <span asp-validation-for="valor" class="text-danger"></span>
             </div>
@@ -46,20 +52,31 @@
 
 @section Scripts {
     <script>
-        document.getElementById("planoSelect").addEventListener("change", function () {
+ 
+
+
+            document.getElementById("planoSelect").addEventListener("change", function () {
             const valorInput = document.getElementById("valorInput");
             const plano = this.value;
-
-            if (plano === "Ouro") {
-                valorInput.value = "100.00";
-            } else if (plano === "Prata") {
-                valorInput.value = "75.00";
-            } else if (plano === "Bronze") {
-                valorInput.value = "50.00";
+                valorInput.disabled = false;
+            if (plano == "Ouro") {
+                
+                valorInput.selectedIndex = 0;
+            } else if (plano == "Prata") {
+                valorInput.selectedIndex = 1;
+            } else if (plano == "Bronze") {
+                valorInput.selectedIndex = 2;
             } else {
-                valorInput.value = "";
+                valorInput.selectedIndex = 3;
             }
+            valorInput.disabled = true;
+
         });
+
+        $('#formID').on('submit', function () {
+            valorInput.disabled = false;
+        });
+        
     </script>
 
     @{

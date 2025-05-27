@@ -9,6 +9,11 @@ namespace turismoTCC.Controllers
             return View();
         }
 
-        
+        public IActionResult CanionDetalhes()
+        {
+            return View();
+        }
+
+
     }
 }

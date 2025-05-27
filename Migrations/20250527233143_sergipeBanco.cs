@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace turismoTCC.Migrations
 {
     /// <inheritdoc />
-    public partial class bancoTurismo : Migration
+    public partial class sergipeBanco : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

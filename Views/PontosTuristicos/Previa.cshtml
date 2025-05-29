@@ -6,26 +6,18 @@
     <title>Prévia dos Pontos Turísticos</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body class="bg-light text-dark">
 
-    <!-- Header / Navbar -->
-    <header class="bg-primary bg-gradient text-white py-3 mb-4">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center">
-            <h1 class="h3 mb-0">turismoTCC</h1>
-            <nav class="d-flex gap-3">
-                <a href="/" class="text-white text-decoration-none">Home</a>
-                <a href="/Usuarios" class="text-white text-decoration-none">Usuários</a>
-                <a href="/PontosTuristicos" class="text-white text-decoration-none">Pontos Turísticos</a>
-                <a href="/Sugestoes" class="text-white text-decoration-none">Sugestões</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Conteúdo principal -->
     <main class="container mb-5">
         <h2 class="text-center text-primary mb-4">Venha conhecer Sergipe</h2>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow-sm h-100">
                     <img src="/imagens/orla.png" class="card-img-top img-fluid" alt="Orla de Atalaia">
@@ -41,41 +33,42 @@
                     <img src="/imagens/canion.jpeg" class="card-img-top img-fluid" alt="Cânion do Xingó">
                     <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title text-center">Cânion do Xingó</h5>
-                        <a class="btn btn-primary w-100 mt-3" asp-controller="DetalhesPontos" asp-action="Canion">Ver Mais</a>
+                        <a class="btn btn-primary w-100 mt-3" asp-controller="DetalhesPontos" asp-action="CanionDetalhes">Ver Mais</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow-sm h-100">
-                    <img src="imagens/sao_cristovao.jpg" class="card-img-top img-fluid" alt="São Cristóvão">
-                    <div class="card-body">
+                    <img src="~/imagens/cristovao.jpg" class="card-img-top img-fluid" alt="São Cristóvão">
+                    <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title text-center">São Cristóvão</h5>
+                        <a class="btn btn-primary w-100 mt-3" asp-controller="DetalhesPontos" asp-action="CristovaoDetalhes">Ver Mais</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow-sm h-100">
-                    <img src="imagens/laranjeiras.jpg" class="card-img-top img-fluid" alt="Laranjeiras">
-                    <div class="card-body">
+                    <img src="~/imagens/Laranja.jpg" class="card-img-top img-fluid" alt="Laranjeiras">
+                    <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title text-center">Laranjeiras</h5>
+                        <a class="btn btn-primary w-100 mt-3" asp-controller="DetalhesPontos" asp-action="LaranjeirasDetalhes">Ver Mais</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow-sm h-100">
-                    <img src="imagens/museu.jpg" class="card-img-top img-fluid" alt="Museu da Gente Sergipana">
-                    <div class="card-body">
+                    <img src="/imagens/museu.jpg" class="card-img-top img-fluid" alt="Museu da Gente Sergipana">
+                    <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title text-center">Museu da Gente Sergipana</h5>
+                        <a class="btn btn-primary w-100 mt-3" asp-controller="DetalhesPontos" asp-action="MuseuDetalhes">Ver Mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-  
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

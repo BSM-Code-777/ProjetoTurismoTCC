@@ -14,6 +14,22 @@ namespace turismoTCC.Controllers
             return View();
         }
 
+        public IActionResult CristovaoDetalhes()
+        {
+            return View();
+        }
+
+        public IActionResult LaranjeirasDetalhes()
+        {
+            return View();
+        }
+
+        public IActionResult MuseuDetalhes()
+        {
+            return View();
+        }
+
+
 
     }
 }

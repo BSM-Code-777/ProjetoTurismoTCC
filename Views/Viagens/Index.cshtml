@@ -27,7 +27,6 @@
                 <tr>
                     <th>@Html.DisplayNameFor(model => model.nome)</th>
                     <th>@Html.DisplayNameFor(model => model.Localidade)</th>
-                    <th>@Html.DisplayNameFor(model => model.Usuario)</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -36,12 +35,11 @@
                 {
                     <tr class="table-light">
                         <td>@Html.DisplayFor(modelItem => item.nome)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Localidade.descricao)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Usuario.Id)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Localidade.nome)</td>
+                        <td></td>
+                        
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.IdViagem" class="btn btn-sm btn-outline-warning me-1">
-                                <i class="bi bi-pencil-square"></i> Editar
-                            </a>
+                            
                             <a asp-action="Details" asp-route-id="@item.IdViagem" class="btn btn-sm btn-outline-info me-1">
                                 <i class="bi bi-info-circle"></i> Detalhes
                             </a>

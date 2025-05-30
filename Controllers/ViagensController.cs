@@ -132,7 +132,7 @@ namespace turismoTCC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idLocal"] = new SelectList(_context.Set<Localidade>(), "idLocal", "descricao", viagem.idLocal);
+            ViewData["idLocal"] = new SelectList(_context.Set<Localidade>(), "idLocal", "nome", viagem.idLocal);
             ViewData["idUsuario"] = new SelectList(_context.Usuario, "Id", "Id", viagem.idUsuario);
             return View(viagem);
         }

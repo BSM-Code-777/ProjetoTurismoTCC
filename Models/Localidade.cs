@@ -32,7 +32,7 @@ namespace turismoTCC.Models
         public string? tipo { get; set; }
 
 
-        public ICollection<Viagem>? Viagens { get; set; }
+        public ICollection<Viagem> Viagens { get; set; }
 
 
 

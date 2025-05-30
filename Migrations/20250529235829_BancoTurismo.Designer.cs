@@ -12,8 +12,8 @@ using turismoTCC.Data;
 namespace turismoTCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250527233143_sergipeBanco")]
-    partial class sergipeBanco
+    [Migration("20250529235829_BancoTurismo")]
+    partial class BancoTurismo
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -273,29 +273,15 @@ namespace turismoTCC.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("endereco")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("latitude")
-                        .HasColumnType("int");
-
                     b.Property<string>("linkMaps")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("longitude")
-                        .HasColumnType("int");
-
                     b.Property<string>("nome")
                         .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
-
-                    b.Property<string>("rua")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("tipo")
                         .IsRequired()

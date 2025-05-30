@@ -4,26 +4,35 @@
     ViewData["Title"] = "Lista de Usuários";
 }
 
-<h2>Usuários Cadastrados</h2>
+<div class="container mt-5">
+    <div class="bg-primary bg-gradient text-white p-4 rounded-4 shadow mb-4">
+        <h2 class="mb-0">
+            <i class="bi bi-people-fill me-2"></i> Usuários Cadastrados
+        </h2>
+        <p class="mb-0">Visualize os usuários cadastrados no sistema de turismo.</p>
+    </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Email</th>
-            <th>UserName</th>
-            <th>Id</th>
-            <th>Nome Completo</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var usuario in Model)
-        {
-            <tr>
-                <td>@usuario.Email</td>
-                <td>@usuario.UserName</td>
-                <td>@usuario.Id</td>
-                <td>@usuario.nome</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center align-middle shadow-sm rounded-3">
+            <thead class="table-primary">
+                <tr>
+                    <th>Email</th>
+                    <th>Usuário</th>
+                    <th>ID</th>
+                    <th>Nome Completo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var usuario in Model)
+                {
+                    <tr class="table-light">
+                        <td>@usuario.Email</td>
+                        <td>@usuario.UserName</td>
+                        <td>@usuario.Id</td>
+                        <td>@usuario.nome</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

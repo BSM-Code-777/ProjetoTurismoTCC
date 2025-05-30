@@ -56,7 +56,7 @@ namespace turismoTCC.Controllers
         // GET: Viagens/Create
         public IActionResult Create()
         {
-            ViewData["idLocal"] = new SelectList(_context.Set<Localidade>(), "idLocal", "descricao");
+            ViewData["idLocal"] = new SelectList(_context.Set<Localidade>(), "idLocal", "nome");
             ViewData["idUsuario"] = new SelectList(_context.Usuario, "Id", "Id");
             return View();
         }

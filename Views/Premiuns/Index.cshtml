@@ -1,45 +1,44 @@
 ﻿@model IEnumerable<turismoTCC.Models.Premium>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Contas Premium";
 }
 
-<h1>Index</h1>
+<div class="container mt-5">
+    <!-- Cabeçalho estilizado -->
+    <div class="bg-primary bg-gradient text-white p-4 rounded-4 shadow mb-4 text-center">
+        <h2 class="mb-1">
+            <i class="bi bi-star-fill me-2"></i> Contas Premium
+        </h2>
+        <p class="mb-0">Confira as opções e informações das contas premium disponíveis.</p>
+    </div>
 
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.periodo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.valor)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.periodo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.valor)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.idPremium">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.idPremium">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.idPremium">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <!-- Tabela responsiva -->
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center align-middle shadow-sm rounded-3">
+            <thead class="table-primary">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.periodo)</th>
+                    <th>@Html.DisplayNameFor(model => model.valor)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="table-light">
+                        <td>@Html.DisplayFor(modelItem => item.nome)</td>
+                        <td>@Html.DisplayFor(modelItem => item.periodo)</td>
+                        <td>@Html.DisplayFor(modelItem => item.valor)</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.idPremium" class="btn btn-sm btn-outline-warning me-1">Editar</a>
+                            <a asp-action="Details" asp-route-id="@item.idPremium" class="btn btn-sm btn-outline-info me-1">Detalhes</a>
+                            <a asp-action="Delete" asp-route-id="@item.idPremium" class="btn btn-sm btn-outline-danger">Deletar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

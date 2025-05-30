@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace turismoTCC.Migrations
 {
     /// <inheritdoc />
-    public partial class sergipeBanco : Migration
+    public partial class BancoTurismo : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -73,12 +73,8 @@ namespace turismoTCC.Migrations
                     idLocal = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    linkMaps = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    latitude = table.Column<int>(type: "int", nullable: false),
-                    longitude = table.Column<int>(type: "int", nullable: false),
                     bairro = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    rua = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    linkMaps = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     descricao = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     tipo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
                 },

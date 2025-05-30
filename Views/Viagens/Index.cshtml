@@ -1,47 +1,57 @@
 ﻿@model IEnumerable<turismoTCC.Models.Viagem>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Viagens Cadastradas";
 }
 
-<h1>Index</h1>
+<div class="container mt-5">
+    <!-- Cabeçalho estilizado -->
+    <div class="bg-primary bg-gradient text-white p-4 rounded-4 shadow mb-4 text-center">
+        <h2 class="mb-1">
+            <i class="bi bi-geo-alt-fill me-2"></i> Viagens Cadastradas
+        </h2>
+        <p class="mb-0">Lista de viagens registradas por usuários no sistema.</p>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Localidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Localidade.descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdViagem">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdViagem">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdViagem">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <!-- Botão criar -->
+    <div class="mb-4 text-end">
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle me-1"></i> Nova Viagem
+        </a>
+    </div>
+
+    <!-- Tabela de viagens -->
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center align-middle shadow-sm rounded-3">
+            <thead class="table-primary">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.Localidade)</th>
+                    <th>@Html.DisplayNameFor(model => model.Usuario)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="table-light">
+                        <td>@Html.DisplayFor(modelItem => item.nome)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Localidade.descricao)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Usuario.Id)</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.IdViagem" class="btn btn-sm btn-outline-warning me-1">
+                                <i class="bi bi-pencil-square"></i> Editar
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.IdViagem" class="btn btn-sm btn-outline-info me-1">
+                                <i class="bi bi-info-circle"></i> Detalhes
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.IdViagem" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash"></i> Deletar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

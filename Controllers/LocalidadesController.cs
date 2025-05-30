@@ -56,7 +56,7 @@ namespace turismoTCC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("idLocal,nome,linkMaps,latitude,longitude,bairro,endereco,rua,descricao,tipo")] Localidade localidade)
+        public async Task<IActionResult> Create([Bind("idLocal,nome,bairro,linkMaps,descricao,tipo")] Localidade localidade)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace turismoTCC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("idLocal,nome,linkMaps,latitude,longitude,bairro,endereco,rua,descricao,tipo")] Localidade localidade)
+        public async Task<IActionResult> Edit(int id, [Bind("idLocal,nome,bairro,linkMaps,descricao,tipo")] Localidade localidade)
         {
             if (id != localidade.idLocal)
             {

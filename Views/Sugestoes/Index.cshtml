@@ -1,45 +1,43 @@
 ﻿@model IEnumerable<turismoTCC.Models.Sugestao>
 
 @{
-    ViewData["Title"] = "Pontos Turisticos Sugeridos";
+    ViewData["Title"] = "Pontos Turísticos Sugeridos";
 }
 
-<h1>Pontos Turisticos Sugeridos</h1>
+<div class="container mt-5">
+    <!-- Cabeçalho com fundo em gradiente -->
+    <div class="bg-primary bg-gradient text-white p-4 rounded-4 shadow mb-4 text-center">
+        <h2 class="mb-1">
+            <i class="bi bi-map-fill me-2"></i> Pontos Turísticos Sugeridos
+        </h2>
+        <p class="mb-0">Explore sugestões de pontos turísticos enviadas pelos usuários.</p>
+    </div>
 
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.idSugestoes">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.idSugestoes">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.idSugestoes">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <!-- Tabela responsiva -->
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center align-middle shadow-sm rounded-3">
+            <thead class="table-primary">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.descricao)</th>
+                    <th>@Html.DisplayNameFor(model => model.Usuario)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="table-light">
+                        <td>@Html.DisplayFor(modelItem => item.nome)</td>
+                        <td>@Html.DisplayFor(modelItem => item.descricao)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Usuario.Id)</td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.idSugestoes" class="btn btn-sm btn-outline-primary me-1">Detalhes</a>
+                            <a asp-action="Delete" asp-route-id="@item.idSugestoes" class="btn btn-sm btn-outline-danger">Deletar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

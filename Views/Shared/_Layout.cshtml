@@ -9,48 +9,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - turismoTCC</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/turismoTCC.styles.css" asp-append-version="true" />
+
+    <!-- Estilo futurista personalizado -->
+    <style>
+        header.futuristic-header {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: #fff;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+            border-radius: 0 0 20px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+        }
+
+        .futuristic-header .nav-link {
+            color: #ffffff;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+            .futuristic-header .nav-link:hover,
+            .futuristic-header .nav-link:focus {
+                background-color: rgba(255, 255, 255, 0.15);
+                border-radius: 30px;
+                padding: 0.5rem 1rem;
+            }
+
+        .futuristic-header .brand-icon {
+            font-size: 1.8rem;
+            margin-right: 10px;
+            color: #0ff;
+        }
+
+        .futuristic-header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .futuristic-header .nav-pills .nav-link.active {
+            background-color: #0ff;
+            color: #000;
+            font-weight: bold;
+        }
+
+        #cortexto {
+            color: white;
+        }
+    </style>
+
+    <style>
+        footer.futuristic-footer {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: #ffffff;
+            box-shadow: 0 -4px 20px rgba(0, 255, 255, 0.1);
+            border-radius: 20px 20px 0 0;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+            footer.futuristic-footer a {
+                color: #0ff;
+                text-decoration: none;
+                transition: color 0.3s ease, text-shadow 0.3s ease;
+            }
+
+                footer.futuristic-footer a:hover {
+                    color: #ffffff;
+                    text-shadow: 0 0 8px #0ff;
+                }
+    </style>
+
+
 </head>
 <body class="bg-light text-dark d-flex flex-column min-vh-100">
 
-    <header class="bg-primary bg-gradient text-white py-3 mb-4">
-        <div class="container d-flex align-items-center justify-content-between flex-wrap">
-            <div class="me-auto">
-                <h1 class="h3 mb-0">turismoTCC</h1>
+    <header class="futuristic-header py-3 mb-4">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <i class="bi bi-globe2 brand-icon"></i>
+                <h1 class="fw-semibold">turismoTCC</h1>
             </div>
-            <nav class="mx-auto">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="PontosTuristicos" asp-action="Previa">Pontos Turísticos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="Sugestoes" asp-action="Create">Sugestoes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="ApresentaçãoPremiuns" asp-action="Index">Premium</a>
-                    </li>
-                    @if ((AdmTurismo.IsSignedIn(User)) && User.IsInRole("Administrador")){
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-area="" asp-controller="Master" asp-action="Index">Gerente</a>
-                    </li>
 
-
+            <!-- Navegação -->
+            <nav class="d-flex justify-content-center">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="PontosTuristicos" asp-action="Previa">
+                            <i class="bi bi-geo-alt me-1"></i>Pontos Turísticos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Sugestoes" asp-action="Create">
+                            <i class="bi bi-chat-left-text me-1"></i>Sugestões
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="ApresentaçãoPremiuns" asp-action="Index">
+                            <i class="bi bi-star me-1"></i>Premium
+                        </a>
+                    </li>
+                    @if ((AdmTurismo.IsSignedIn(User)) && User.IsInRole("Administrador"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Master" asp-action="Index">
+                                <i class="bi bi-shield-lock me-1"></i>Gerente
+                            </a>
+                        </li>
                     }
-                   
-                    
                 </ul>
             </nav>
-            <div class="ms-auto">
+
+            <!-- Login -->
+            <div class="ms-3">
+
                 <partial name="_LoginPartial" />
+
             </div>
         </div>
     </header>
+
+
 
     <main class="flex-grow-1">
         <div class="container my-5">
@@ -60,14 +154,15 @@
         </div>
     </main>
 
-    <footer class="bg-primary bg-gradient text-white text-center py-3 mt-auto">
+    <footer class="futuristic-footer text-center py-3 mt-auto">
         <div class="container">
             &copy; 2025 - turismoTCC |
-            <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-white text-decoration-underline">
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">
                 Política de Privacidade
             </a>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

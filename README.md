@@ -3,7 +3,7 @@ Abaixo vem as instruções de uso:
 
 # Funcionalidades
 - Cadastro de Clientes: Usuários podem entrar no site e cadastrarem-se como Clientes;
-- Controle de Acesso: Utilizando o e-mail "" e a senha "", é possível acessar a área exclusiva para Gerentes;
+- Controle de Acesso: Utilizando o e-mail "admTurismo@senai.com" e a senha "Turismo@005008!", é possível acessar a área exclusiva para Gerentes;
 - Cadastro de Viagens e Sugestões: Clientes cadastrados podem cadastrar uma viagem entre vários pontos turísticos, além de poderem enviar sugestões para o Gerente;
 - Serviço Premium: Clientes podem se inscrever em alguns dos serviços Prenium disponíveis, com data e preços fixos;
 - Gerenciamento: Gerentes podem ver dados que Clientes não podem ver, como cadastrar e visualizar Clientes, Viagens, Pontos Turísticos e outros aspectos do banco de dados.

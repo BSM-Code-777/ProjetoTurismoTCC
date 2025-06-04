@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("turismoTCC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f3f03572dfc7c4fdda2a34464e0670cb75f3ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("turismoTCC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("turismoTCC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

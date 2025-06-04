@@ -12,8 +12,8 @@ using turismoTCC.Data;
 namespace turismoTCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250529235829_BancoTurismo")]
-    partial class BancoTurismo
+    [Migration("20250604125632_sergipeTurismo")]
+    partial class sergipeTurismo
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
